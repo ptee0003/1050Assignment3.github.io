@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="">
+    <head>
+        <title>Golden Mug Cafe</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link href="css/layout.css" rel="stylesheet">
+        <link href="css/stylesheet.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!-- ============================================ -->
+        <!--                 Navigation                   -->
+        <!-- ============================================ -->
+
+        <header id="cs-navigation">
+            <div class="cs-container">
+                <!--Nav Logo-->
+                <a href="" class="cs-logo" aria-label="back to home">
+                    <img src="images/blogo.gif" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+                </a>
+                <!--Navigation List-->
+                <nav class="cs-nav" role="navigation">
+                    <!--Mobile Nav Toggle-->
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box" aria-hidden="true">
+                            <span class="cs-line cs-line1" aria-hidden="true"></span>
+                            <span class="cs-line cs-line2" aria-hidden="true"></span>
+                            <span class="cs-line cs-line3" aria-hidden="true"></span>
+                        </div>
+                    </button>
+                    <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link cs-active">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    Menu
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    Catering Services
+                                </a>
+                            </li>
+                            <li class="cs-li">
+                                <a href="" class="cs-li-link">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <a href="" class="cs-button-solid cs-nav-button">Order Now</a>
+                <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+                <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                    <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                    <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+                </button> -->
+            </div>
+        </header>
+                                        
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+        <section id="hero-1785">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">The perfect way to start your day</span>
+                    <h1 class="cs-title">A Coffee a Day Keeps the Grumpy Away!  </h1>
+                    <p class="cs-text">
+    
+                    </p>
+                    <div class="cs-button-group">
+                        <a href="" class="cs-button-solid cs-button1">Check Out Our Menu </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="images/coffeebg1.jpg">
+                <source media="(min-width: 601px)" srcset="images/coffeebg1.jpg">
+                <img loading="lazy" decoding="async" src="images/coffeebg1.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+            </picture>
+
+            <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+            <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
+            <img class="cs-graphic cs-graphic-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+        </section>
+
+        <!-- ============================================ -->
+        <!--                Meet The Team                 -->
+        <!-- ============================================ -->
+
+        <section id="meet-us-347">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <div class="cs-flex-group">
+                        <span class="cs-topper">Feeling Hungry?</span>
+                        <h2 class="cs-title">Our Most Popular Items</h2>
+                    </div>
+                    <a href="" class="cs-button-solid">See Entire Menu</a>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <!--Background Image-->
+                        <picture class="cs-background">
+                            <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/236804/pexels-photo-236804.jpeg">
+                            <source media="(min-width: 768px)" srcset="https://images.pexels.com/photos/236804/pexels-photo-236804.jpeg?">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/236804/pexels-photo-236804.jpeg?" alt="pancakes" width="305" height="335">
+                            </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Pancakes</span>
+                            <span class="cs-job">A$17.00</span>
+                            <span class="cs-job">Pancakes with ice cream, banana, mixed berries, Nutella, and maple syrup</span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <!--Background Image-->
+                        <picture class="cs-background">
+                            <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/6252740/pexels-photo-6252740.jpeg?">
+                            <source media="(min-width: 768px)" srcset="https://images.pexels.com/photos/6252740/pexels-photo-6252740.jpeg?">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/6252740/pexels-photo-6252740.jpeg?" alt="dips tray" width="305" height="335">
+                            </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Dips Tray</span>
+                            <span class="cs-job">A$14.00</span> 
+                            <span class="cs-job">Pita bread, feta, tzatziki, and hummus</span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <!--Background Image-->
+                        <picture class="cs-background">
+                            <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/5946804/pexels-photo-5946804.jpeg?">
+                            <source media="(min-width: 768px)" srcset="https://images.pexels.com/photos/5946804/pexels-photo-5946804.jpeg?">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/5946804/pexels-photo-5946804.jpeg?" alt="banaana shake" width="305" height="335">
+                            </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Banana Shake</span>
+                            <span class="cs-job">A$11.00</span>
+                            <span class="cs-job">Fresh bananas blended with milk</span>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <!--Background Image-->
+                        <picture class="cs-background">
+                            <source media="(max-width: 767px)" srcset="https://images.pexels.com/photos/18188572/pexels-photo-18188572/free-photo-of-fried-chicken-nuggets.jpeg?">
+                            <source media="(min-width: 768px)" srcset="https://images.pexels.com/photos/18188572/pexels-photo-18188572/free-photo-of-fried-chicken-nuggets.jpeg?">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/18188572/pexels-photo-18188572/free-photo-of-fried-chicken-nuggets.jpeg?" alt="nuggets" width="305" height="335">
+                            </picture>
+                        <div class="cs-info">
+                            <span class="cs-name">Nuggets</span>
+                            <span class="cs-job">A$10.00 - A$13.00</span>
+                            <span class="cs-job">Chicken nuggest - comes in size small and large</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                        
+        <!-- ============================================ -->
+        <!--                 Recent Posts                 -->
+        <!-- ============================================ -->
+
+        <section id="blog-1347">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Social Media</span>
+                    <h2 class="cs-title">Follow our Facebook!</h2>
+                    <p class="cs-text">
+                        Get information on our promotion and specials, new items and more. See our recent posts:
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <a class="cs-link" href="https://www.facebook.com/photo?fbid=1240421807392148&set=a.1053482749419389">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                    srcset="https://scontent.fmel5-1.fna.fbcdn.net/v/t39.30808-6/441292027_1240421804058815_6644386555646031819_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kflWmXNaEzoQ7kNvgHTAtP5&_nc_ht=scontent.fmel5-1.fna&oh=00_AYBL2NM6d4Zqsg7wpzNgDit_O-Q4db3ckg9W2z4EDsVQJw&oe=6657D1BF">
+                                <source media="(min-width: 601px)"
+                                    srcset="https://scontent.fmel5-1.fna.fbcdn.net/v/t39.30808-6/441292027_1240421804058815_6644386555646031819_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kflWmXNaEzoQ7kNvgHTAtP5&_nc_ht=scontent.fmel5-1.fna&oh=00_AYBL2NM6d4Zqsg7wpzNgDit_O-Q4db3ckg9W2z4EDsVQJw&oe=6657D1BF">
+                                <img decoding="async"
+                                    src="https://scontent.fmel5-1.fna.fbcdn.net/v/t39.30808-6/441292027_1240421804058815_6644386555646031819_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=kflWmXNaEzoQ7kNvgHTAtP5&_nc_ht=scontent.fmel5-1.fna&oh=00_AYBL2NM6d4Zqsg7wpzNgDit_O-Q4db3ckg9W2z4EDsVQJw&oe=6657D1BF"
+                                    alt="facebook post 1" width="413" height="374" aria-hidden="true">
+                            </picture>
+                            <div class="cs-item-text">
+                                <h3 class="cs-h3">
+                                    Fuel your weekend errands with a tasty on-the-go snack from our fresh roll selection and make the most of your weekend! 🏃‍♂️✨
+                                    <picture class="cs-icon-wrapper">
+                                        <img class="cs-icon" decoding="async"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                                alt="arrow" width="413" height="374" aria-hidden="true">
+                                    </picture>
+                                </h3>
+                                <div class="cs-info">
+                                    <span class="cs-date">
+                                        Golden Mug Cafe
+                                    </span>
+                                    <span class="cs-category">
+                                        26/05/2024
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a class="cs-link" href="https://www.facebook.com/photo?fbid=1240430440724618&set=a.1053482749419389">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                    srcset="https://scontent.fmel15-2.fna.fbcdn.net/v/t39.30808-6/441274441_1240430437391285_7496014505103493439_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=L_qBrIvrt7MQ7kNvgFAKcYc&_nc_ht=scontent.fmel15-2.fna&oh=00_AYA4qHHaehsPqkg4pjeaWfsGYoYcFGThV6cJh9xaAoXjJg&oe=66582114">
+                                <source media="(min-width: 601px)"
+                                    srcset="https://scontent.fmel15-2.fna.fbcdn.net/v/t39.30808-6/441274441_1240430437391285_7496014505103493439_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=L_qBrIvrt7MQ7kNvgFAKcYc&_nc_ht=scontent.fmel15-2.fna&oh=00_AYA4qHHaehsPqkg4pjeaWfsGYoYcFGThV6cJh9xaAoXjJg&oe=66582114">
+                                <img decoding="async"
+                                    src="https://scontent.fmel15-2.fna.fbcdn.net/v/t39.30808-6/441274441_1240430437391285_7496014505103493439_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=L_qBrIvrt7MQ7kNvgFAKcYc&_nc_ht=scontent.fmel15-2.fna&oh=00_AYA4qHHaehsPqkg4pjeaWfsGYoYcFGThV6cJh9xaAoXjJg&oe=66582114"
+                                    alt="facebook post 2" width="413" height="374" aria-hidden="true">
+                            </picture>
+                            <div class="cs-item-text">
+                                <h3 class="cs-h3">
+                                    Wrap up your morning with our range of go-to bites! We’re here early at 6am on weekdays and 7:30am on weekends. 🌯
+                                    <picture class="cs-icon-wrapper">
+                                        <img class="cs-icon" decoding="async"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                                alt="arrow" width="413" height="374" aria-hidden="true">
+                                    </picture>
+                                </h3>
+                                <div class="cs-info">
+                                    <span class="cs-date">
+                                        Golden Mug Cafe
+                                    </span>
+                                    <span class="cs-category">
+                                        23/05/2024
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a class="cs-link" href="https://www.facebook.com/photo?fbid=1240417444059251&set=a.1053482749419389">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                    srcset="https://scontent.fmel15-2.fna.fbcdn.net/v/t39.30808-6/441266038_1240417440725918_4519673565988793157_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3OMqOT13-GIQ7kNvgHmfnTw&_nc_ht=scontent.fmel15-2.fna&oh=00_AYAzKZTqCuSBYDWex2Ys1dACqL931Xn4v0eS4O7S-7S35Q&oe=66582CA2">
+                                <source media="(min-width: 601px)"
+                                    srcset="https://scontent.fmel15-2.fna.fbcdn.net/v/t39.30808-6/441266038_1240417440725918_4519673565988793157_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3OMqOT13-GIQ7kNvgHmfnTw&_nc_ht=scontent.fmel15-2.fna&oh=00_AYAzKZTqCuSBYDWex2Ys1dACqL931Xn4v0eS4O7S-7S35Q&oe=66582CA2">
+                                <img decoding="async"
+                                    src="https://scontent.fmel15-2.fna.fbcdn.net/v/t39.30808-6/441266038_1240417440725918_4519673565988793157_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3OMqOT13-GIQ7kNvgHmfnTw&_nc_ht=scontent.fmel15-2.fna&oh=00_AYAzKZTqCuSBYDWex2Ys1dACqL931Xn4v0eS4O7S-7S35Q&oe=66582CA2"
+                                    alt="facebook post 3" width="413" height="374" aria-hidden="true">
+                            </picture>
+                            <div class="cs-item-text">
+                                <h3 class="cs-h3">
+                                    Discover the perfect brew at our city store or our new spot in North Melbourne. ✨☕️ T2, 1 Flemington Road, North Melbourne
+                                    <picture class="cs-icon-wrapper">
+                                        <img class="cs-icon" decoding="async"
+                                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                                alt="arrow" width="413" height="374" aria-hidden="true">
+                                    </picture>
+                                </h3>
+                                <div class="cs-info">
+                                    <span class="cs-date">
+                                        Golden Mug Cafe
+                                    </span>
+                                    <span class="cs-category">
+                                        20/05/2024
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-bubbles" aria-hidden="true"></div>
+            <div class="cs-bubbles cs-bubbles-small" aria-hidden="true"></div>
+            <div class="cs-bubbles cs-bubbles-big" aria-hidden="true">
+                <span class="cs-bubbles-big2"></span>
+            </div>
+        </section>
+                                
+        <!-- ============================================ -->
+        <!--                  Why Choose                  -->
+        <!-- ============================================ -->
+
+        <section id="why-choose-37">
+            <div class="cs-container">
+                <!-- Right Image -->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="https://images.pexels.com/photos/2193600/pexels-photo-2193600.jpeg?">
+                    <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/2193600/pexels-photo-2193600.jpeg?">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://images.pexels.com/photos/2193600/pexels-photo-2193600.jpeg?" alt="cafe interior" width="858" height="781">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Get to know us more</span>
+                    <h2 class="cs-title">About Us</h2>
+                    <p class="cs-text">
+                        Located in Novotel Melbourne Central, Golden Mug Cafe is the perfect place for a morning cup of coffee to start the day and set the mood, or for a lunch break to have a relaxing one hour respite in a pleasant and stress-free environment. 
+                    </p>
+                    <p class="cs-text">
+                        Our employees prides themselves on serving customers to ensure sastisfaction every time. Golden Mug Cafe’s ultimate aim is to position itself as a special place with original coffee-brewing recipes from all over the world, perfect for a romantic date or a cosy getaway for anyone who values exceptional atmosphere and top quality service.   
+                    </p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+                            Good Quality
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+                            Affordable
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+                            Friendly Staff
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
+                            Comfy Environment
+                        </li>
+                    </ul>
+                    <a href="" class="cs-button-solid">Learn More About Us</a>
+                </div>
+            </div>
+        </section>
+                                                
+        
+
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-274">
+            <div class="cs-container">
+                <!-- Logo Group -->
+                <div class="cs-logo-group">
+                    <a aria-label="go back to home" class="cs-logo" href="">
+                        <!-- Remove the light class if you don't need the dark logo -->
+                        <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/logo.webp" alt="logo" width="240" height="32">
+                    </a>
+                    <div class="cs-social">
+                        <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/people/Golden-Mug-Cafe/100042730211557/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/goldenmug_melbourne/">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                        </a>
+                    </div>
+                </div>
+                <!-- Links -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Contact</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="tel:(03) 9929 8805">Phone: (03) 9929 8805</a>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="Info@goldenmugcafe.com.au">Info@goldenmugcafe.com.au</a>
+                    </li>
+                </ul>
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Address</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        <a class="cs-nav-link" href="">Ground Floor of Novotel Hotel, <br>399 Little Lonsdale St, Melbourne VIC 3000</a>
+                    </li>
+                </ul>
+                <!-- Contact Info -->
+                <ul class="cs-nav">
+                    <li class="cs-nav-li">
+                        <span class="cs-header">Opening Hours</span>
+                    </li>
+                    <li class="cs-nav-li">
+                        Weekdays: 6am-6pm
+                    </li>
+                    <li class="cs-nav-li">
+                       Saturaday : 7am-4pm
+                    </li>
+                    <li class="cs-nav-li">
+                        Sunday : 7am-8pm
+                     </li>
+                </ul>
+            </div>
+            <div class="cs-bottom">
+                <span class="cs-copyright">© Copyright 2021 - <a class="cs-copyright-link" href="">Golden Mug Cafe</a></span>
+            </div>
+        </footer>
+                                
+        <!-- JAVASCRIPTS -->
+        <script src="js/dropdown.js"></script>  <!-- Mobile navigation only -->
+
+
+        <script src="js/backtotop.js"></script>
+        
+        <div class="enclose bordar black" id="bottomtop">
+            <button class="btop" onclick="window.scrollTo(0,0);"><img src="images/arrowup.gif" alt="arrow" style="width: 4rem;"></button>
+        </div>  
+        
+    </body>
+</html>
